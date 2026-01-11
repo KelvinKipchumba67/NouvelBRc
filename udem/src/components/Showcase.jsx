@@ -1,11 +1,11 @@
 import React from "react";
 import "./Showcase.css";
-import logo from "../assets/images/react.svg";
+import logo from "../assets/images/logo.png";
 import ShowcaseImage from "../assets/images/ShowcaseImage.jpg";
 function Showcase(){
     return <header>
         <nav>
-            <img src={logo} alt="logo" />
+            <img className="logo"    src={logo} alt="logo" />
         </nav>
         <main>
             <div className="leftContent">
@@ -15,7 +15,7 @@ function Showcase(){
             </div>
 
             <div className="rightContent">
-                <img src={ShowcaseImage} alt="Showcase Image" />
+                <img className="image"     src={ShowcaseImage} alt="Showcase Image" />
             </div>
         </main>
     </header>
