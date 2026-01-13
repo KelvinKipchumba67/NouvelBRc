@@ -1,21 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .navbar{
-    display: flex; /*activates the layout engine*/
-    justify-content: space-between; /*this ensures the logo goes to the left and the links to the right*/
-    align-items: center;
-    padding: 1.2rem 2rem;
     background-color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     border-bottom: 1px solid var(--border-color);
+  width: 100%;
 }
-.logo{
+
+.navbar-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  position: relative;
+}
+
+.navbar-logo{
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 800;
@@ -36,6 +37,7 @@
   font-size: 0.95rem;
   color: var(--text-primary);
   position: relative;
+  padding: 0.35rem 0.15rem;
 }
 .nav-links a::after {
   content: '';
@@ -47,23 +49,21 @@
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   transition: width 0.3s ease;
 }
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.join-btn::after {
+  display: none;
+}
 .join-btn{
     background-color: #d9534f;
     color: white;
     border-radius: 5px;
+    padding: 0.55rem 0.9rem;
 
 }
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--text-primary);
-  padding: 0.5rem;
-  transition: var(--transition);
-}
-
 .menu-toggle {
   display: none;
   background: none;
@@ -81,11 +81,11 @@
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 1rem 1.5rem;
+  .navbar-inner{
+    padding: 1rem 0;
   }
 
-  .logo {
+  .navbar-logo {
     font-size: 1.25rem;
   }
 
@@ -123,15 +123,4 @@
   .menu-toggle {
     display: block;
   }
-}
-
-a{
-    color: var(--primary-color);
-    font-family: var(--font-body);
-    text-decoration: none;
-    transition: var(--transition);
-}
-
-a:hover {
-  color: var(--primary-dark);
 }

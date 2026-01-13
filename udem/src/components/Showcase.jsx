@@ -1,13 +1,11 @@
-import React from "react";
 import "./Showcase.css";
-import logo from "../assets/images/logo.png";
 import ShowcaseImage from "../assets/images/ShowcaseImage.jpg";
 function Showcase(){
     return <header>
         {/* <nav>
             <img className="logo"    src={logo} alt="logo" />
         </nav> */}
-        <main>
+        <main className="showcase">
             <div className="leftContent">
                 <div className="content-wrapper">
                     <h2>Join the ultimate tech book club</h2>
