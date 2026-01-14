@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./navbar.css";
 
 function Navbar(){
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);  //this is a react hook, menuOpen holds the current state of the menu, setMenuOpen is function used to update that state,useState intializes state as false by default.
 
     return (
         <header className="site-header">
@@ -12,9 +12,9 @@ function Navbar(){
                     <button
                         type="button"
                         className="menu-toggle"
-                        aria-label="Toggle navigation menu"
-                        aria-expanded={menuOpen}
-                        onClick={() => setMenuOpen((open) => !open)}
+                        aria-label="Toggle navigation menu"//this tells screen readers what the button does
+                        aria-expanded={menuOpen}//tells screen readers if the menu is currently closed or open based on state variable.
+                        onClick={() => setMenuOpen((open) => !open)}//the event handler
                     >
                         ☰
                     </button>
