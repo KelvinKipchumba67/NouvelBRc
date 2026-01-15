@@ -2,14 +2,18 @@ import { useState } from 'react'
 import './App.css'
 import Showcase from './components/Showcase';
 import Navbar from './components/navbar';
-import JoinUS from './components/JoinUs';
+import JoinUs from './components/JoinUs';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Showcase />
-      <JoinUS/>
+      <Routes>
+        <Route path ="/" element={<Showcase/>} />
+        <Route path ="/JoinUs" element={<JoinUs/>} />
+      </Routes>
+        
     </div>
   );
 }

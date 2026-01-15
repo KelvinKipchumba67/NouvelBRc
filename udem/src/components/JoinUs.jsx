@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./JoinUS.css"  
 
 function JoinUS (){
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        password: ''
+    });//this holds the data a user types 
+    const handleChange = (e) =>{
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        });
+    };//this updates the state when the user types
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); //stops page refresh
+        //before backend since backend is not yet created
+        console.log('Form Submitted:', formData);
+
+        //this is where the axios call for the backend will go once ready
+        };
+
     return <header>
         <div className="signup-container">
             <div className="signup-card">
