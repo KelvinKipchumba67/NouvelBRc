@@ -23,7 +23,7 @@ function Navbar(){
                         <li><a href="/blog">Blog</a></li>
                         <li><a href="/picks">Our Picks</a></li>
                         <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/Contact">Contact Us</a></li>
                         <li><a href="/JoinUS" className="join-btn">Join Us</a></li>
                     </ul>
                 </div>

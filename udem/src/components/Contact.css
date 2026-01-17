@@ -1,0 +1,95 @@
+/* 1. Main Background */
+.contact-container {
+  min-height: 80vh; /* Takes up most of the screen */
+  background-color: #faebd7; /* Beige Theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* 2. The Single Centered Card */
+.contact-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 600px; /* Limits width so it looks good on big screens */
+}
+
+/* 3. Header Text inside the card */
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.contact-header p {
+  color: #718096;
+}
+
+/* 4. Form Styles (Reused from previous, but simplified) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: #fcfcfc; /* Slight grey background for inputs */
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #d9534f; /* Primary Red */
+  background-color: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b;
+}
+
+.form-result {
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
