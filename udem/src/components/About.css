@@ -1,0 +1,112 @@
+.about-container {
+  background-color: white;
+}
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  padding: 80px 10%; /* 10% padding on sides keeps it centered */
+  gap: 4rem;
+  background-color: #faebd7; /* Your Beige Theme */
+  min-height: 80vh;
+}
+
+.about-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.about-text .subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d9534f; /* Primary Red */
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/* --- SECTION 2: VALUES (Grid Layout) --- */
+.values-section {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: white;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #1a202c;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 2rem;
+}
+
+.value-card {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+  background: #faebd7; /* Changes to beige on hover */
+}
+
+.value-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.value-card p {
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  /* Stack the Hero */
+  .about-hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* Stack the Grid */
+  .values-grid {
+    grid-template-columns: 1fr; /* Force 1 column */
+  }
+}
