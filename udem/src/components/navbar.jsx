@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
-import {Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 function Navbar(){
     const [menuOpen, setMenuOpen] = useState(false);  //this is a react hook, menuOpen holds the current state of the menu, setMenuOpen is function used to update that state,useState intializes state as false by default.
 
@@ -24,7 +24,7 @@ function Navbar(){
                         <li><a href="/picks">Our Picks</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/Contact">Contact Us</a></li>
-                        <li><a href="/JoinUS" className="join-btn">Join Us</a></li>
+                        <li><Link to="/JoinUs" className="join-btn">Join Us</Link></li>
                     </ul>
                 </div>
             </nav>

@@ -23,7 +23,7 @@ const handleSubmit = (e) =>{
 
 };
 
-return <header>
+return <header className="login-page">
     <main>
     <div className="signup-container"> {/* Reusing container class */}
       <div className="signup-card">    {/* Reusing card class */}
@@ -61,7 +61,7 @@ return <header>
         </form>
 
         <p className="footer-text">
-          Don't have an account? <a href="/JoinUS">Sign Up</a>
+          Don't have an account? <a href="/JoinUs">Sign Up</a>
         </p>
         
       </div>

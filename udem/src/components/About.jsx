@@ -33,14 +33,19 @@ function About (){
         <div className="values-grid">
           
           <div className="value-card">
-            <div className="icon">📚</div>
-            <h3>No Homework</h3>
-            <p>Read what you want. We never assign books, so you never fall behind.</p>
+            <div className="icon">☕</div>
+            <h3>Caffeine & Chapters</h3>
+            <p>45 minutes of deep reading, 15 minutes of coffee breaks. Fuel your mind and your body.</p>
           </div>
           <div className="value-card">
             <div className="icon">🍷</div>
             <h3>Social & Silent</h3>
             <p>30 minutes of socializing, 1 hour of silent reading. The perfect balance.</p>
+          </div>
+          <div className="value-card">
+            <div className="icon">💬</div>
+            <h3>Read & Relate</h3>
+            <p>Read the chapters at home, bring your opinions here. Unfiltered debate on themes, characters, and plot twists.</p>
           </div>
 
         </div>

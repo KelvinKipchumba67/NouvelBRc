@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./JoinUS.css"  
+import "./JoinUs.css"  
 
 function JoinUS (){
     const [formData, setFormData] = useState({
@@ -22,7 +22,7 @@ function JoinUS (){
         //this is where the axios call for the backend will go once ready
         };
 
-    return <header>
+    return <header className="joinus-page">
         <div className="signup-container">
             <div className="signup-card">
                 <h2>Join Us</h2>
@@ -47,7 +47,7 @@ function JoinUS (){
                 </form>
 
                 <p className="footer-text">
-                    Already a Member? <a href="/login">Log in</a>
+                    Already a Member? <a href="/Login">Log in</a>
                 </p>
             </div>
         </div>

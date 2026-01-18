@@ -1,45 +1,47 @@
-.signup-container{
+.login-page .signup-container{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-
-.signup-card{
+.login-page{
+    background-color: antiquewhite;
+}
+.login-page .signup-card{
     background: white;
     padding: 2.5rem;
     border-radius: 12px;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
 }
 
-.signup-card h2{
+.login-page .signup-card h2{
     color: black;
     margin-bottom: 0.5rem;
     font-size: 1.8rem;
 }
-.subtitle{
+.login-page .subtitle{
     color: #718096;
     margin-bottom: 2rem;
     font-size: 0.9rem;
 }
 
-.form-group{
+.login-page .form-group{
     margin-bottom: 1.5rem;
     text-align: left;
 }
 
-label{
+.login-page label{
     display: block;
-    font-size: 0,9rem;
+    font-size: 0.9rem;
     color: #4a5568;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
 
-input{
+.login-page input{
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #e2e8f0;
@@ -48,7 +50,7 @@ input{
     outline: none;
 }
 
-.submit-btn {
+.login-page .submit-btn {
   width: 100%;
   padding: 12px;
   background-color: #d9534f;
@@ -60,12 +62,12 @@ input{
   cursor: pointer;
   margin-top: 1rem;
 }
-.footer-text{
+.login-page .footer-text{
     margin-top: 1.5rem;
     font-size: 0.9rem;
     color: #718096;
 }
-.footer-text a{
+.login-page .footer-text a{
   color: #d9534f;
   text-decoration: none;
   font-weight: bold;

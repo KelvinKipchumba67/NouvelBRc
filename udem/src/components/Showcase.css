@@ -1,88 +1,95 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 .showcase{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 100vh;
-    overflow: hidden; /*prevents scrollbars if image is huge */
+    min-height: calc(100vh - var(--navbar-height, 0px));
+    min-height: calc(100dvh - var(--navbar-height, 0px));
+    overflow: hidden; /* prevents scrollbars if image is huge */
 }
+
+/* On larger screens, lock the hero to the viewport so the image can fill it */
+@media (min-width: 769px){
+    .showcase{
+        height: calc(100vh - var(--navbar-height, 0px));
+        height: calc(100dvh - var(--navbar-height, 0px));
+    }
+}
+
 .rightContent{
-    flex: 1;
-    height: 100%;
     position: relative;
+    min-height: 100%;
 }
 
 .image{
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .leftContent{
-    background-color: #faebd7;
+    flex: 1;
+    background-color: #f3f4f6;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: clamp(2.5rem, 6vw, 6rem);
 }
 .content-wrapper{
-    max-width: 500px;
+    max-width: 560px;
     text-align: center;
 }
 
-.leftContent h2{
-    font-size: 2.5rem;
-    font-family: sans-serif;
+.leftContent h1{
+    font-size: clamp(2.7rem, 4.6vw, 4.2rem);
+    font-family: var(--font-heading, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    margin: 0 0 1.25rem;
     line-height: 1.2;
-    font-weight: 800;
-    color: #1a202c;
+    font-weight: 900;
+    color: var(--text-primary, #1a202c);
 }
 .leftContent p{
-    max-width: 500px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-    color: #4a5568;
+    max-width: 52ch;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 auto 1.25rem;
+    color: var(--text-secondary, #4a5568);
 
 }
 .cta-button{
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
-    color: #d9534f;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
+    color: var(--primary-color, #d9534f);
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s ease;
     padding-bottom: 5px;
+    margin-top: 0.75rem;
 }
 .cta-button:hover{
-    border-bottom: 2px solid #d9534f;
-}
-.logo{
-    height: 200px;
-    width: 200px;
-    object-position: 0% 100%;
-}
-body{
-    background-color: antiquewhite;
+    border-bottom: 2px solid var(--primary-color, #d9534f);
 }
 
 
 @media (max-width: 768px){
     .showcase{
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
         height: auto;
+        min-height: auto;
     }
 
-    .image{
-        height: 300px;
+    .rightContent{
+        /* Keep the hero image visible without being too tall on phones */
+        min-height: clamp(260px, 45vh, 520px);
+    }
+
+    .leftContent{
+        padding: 2.5rem 1.5rem;
     }
 }
