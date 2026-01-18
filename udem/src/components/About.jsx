@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./About.css";
+import aboutImage from "../assets/images/About.jpg";
+
 
 function About (){
     return <header>
