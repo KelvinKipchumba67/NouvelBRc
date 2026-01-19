@@ -20,7 +20,7 @@ function Navbar(){
                     </button>
                     <ul className={`nav-links ${menuOpen ? "active" : ""}`.trim()}>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/Blog">Blog</a></li>
                         <li><a href="/Pick">Our Picks</a></li>
                         <li><a href="/about">About Us</a></li>
                         <li><a href="/Contact">Contact Us</a></li>
