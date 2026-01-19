@@ -9,7 +9,7 @@ function Footer (){
         
         {/* COLUMN 1: Brand & Tagline */}
         <div className="footer-section">
-          <h2 className="footer-logo">EVENTHIVE</h2>
+          <h2 className="footer-logo">NOUVELBRc</h2>
           <p className="footer-text">
             Connecting introverts through the quiet power of reading. 
             Join a chapter near you.
@@ -31,8 +31,8 @@ function Footer (){
         <div className="footer-section">
           <h3>Contact</h3>
           <p>123 Library Lane, Booktown</p>
-          <p>hello@eventhive.com</p>
-          <p>+254 700 123 456</p>
+          <p>kelvinkipchumba935@gmail.com</p>
+          <p>+254 115313728</p>
           <div className="social-icons">
 
  
