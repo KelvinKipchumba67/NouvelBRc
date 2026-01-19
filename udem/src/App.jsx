@@ -10,13 +10,20 @@ import Pick from './components/Pick';
 import Blog from './components/Blog';
 import { Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
+import RecentBlogs from './components/RecentBlogs';
+import Home from './components/Home';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div>
+    
       <Navbar />
+      
       <Routes>
-        <Route path ="/" element={<Showcase/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path ="/RecentBlogs" element={<RecentBlogs/>} />
         <Route path ="/JoinUs" element={<JoinUs/>} />
         <Route path ="/Login" element={<Login/>} />
         <Route path ="/Contact" element={<Contact/>} />        
@@ -28,7 +35,7 @@ function App() {
         <Route path= "/Blog/:id" element={<BlogPost />} />
 
       </Routes>
-      {/* <About />  */}
+      <Footer />  
     </div>
   );
 }
