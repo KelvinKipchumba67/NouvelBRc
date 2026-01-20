@@ -13,6 +13,7 @@ import BlogPost from './components/BlogPost';
 import RecentBlogs from './components/RecentBlogs';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import BookDetail from './components/BookDetail';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path= "/Blog" element={<Blog/>} /> 
         <Route path= "/Blog" element={<Blog/>} /> 
         <Route path= "About" element={<About/>} />
+        <Route path= "/Pick/:id" element= { <BookDetail/>} />
         <Route path= "/Blog/:id" element={<BlogPost />} />
 
       </Routes>

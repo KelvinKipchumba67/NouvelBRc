@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import './Pick.css';
-import { title } from 'process'; 
+import { Link } from 'react-router-dom';
 import diaryofaceo from '../assets/images/diaryofaceo.webp';
 import psychologyofmoney from '../assets/images/psychologyofmoney.jpg';
 import midnightlibrary from '../assets/images/midnightlibrary.jpg';
@@ -93,7 +92,10 @@ function Pick (){
             <div className="card-content">
               <h3>{book.title}</h3>
               <p className="author"> {book.month}</p>
-              <button className="view-btn">View Details</button>
+             <Link to={`/Pick/${book.id}`}>
+             
+             <button className="view-btn">View Details</button>
+             </Link>
             </div>
 
           </div>
